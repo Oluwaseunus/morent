@@ -1,0 +1,30 @@
+.header {
+  height: 12.4rem;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--body-padding);
+  background-color: white;
+
+  .search {
+    margin-right: auto;
+  }
+
+  .activities {
+    display: flex;
+    justify-content: space-between;
+
+    & button {
+      width: 4.4rem;
+      height: 4.4rem;
+      background: none;
+      border: none;
+      border: 1px solid rgba(195, 212, 233, 0.4);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    & :not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+main {
+  padding: 0 var(--body-padding);
+  padding-bottom: 6.4rem;
+  background-color: #f6f7f9;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.2rem;
+  justify-content: space-between;
+}
+
+.hero__swap {
+  width: 6rem;
+  height: 6rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--color-primary-500);
+}
+
+.section__heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__title {
+  font-weight: 600;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  color: var(--color-secondary-300);
+  margin-bottom: 2rem;
+}
+
+.section__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3.2rem;
+  justify-items: center;
+}

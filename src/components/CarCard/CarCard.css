@@ -1,0 +1,60 @@
+.carCard {
+  /* height: 38.8rem; */
+  padding: 2.4rem;
+  max-width: 31rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.carCard__top {
+  display: flex;
+  font-weight: 700;
+  margin-bottom: 6.4rem;
+  justify-content: space-between;
+}
+
+.carCard__name {
+  font-size: 20px;
+  margin-bottom: 4px;
+  color: var(--color-secondary-500);
+}
+
+.carCard__type {
+  font-size: 14px;
+  color: var(--color-secondary-300);
+}
+
+.carCard__image {
+  width: 100%;
+  margin-bottom: 6.4rem;
+}
+
+.carCard__specs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.4rem;
+  justify-content: space-between;
+}
+
+.carCard__item {
+  display: flex;
+  font-size: 14px;
+  list-style: none;
+  font-weight: 500;
+  align-items: center;
+}
+
+.carCard__item-icon {
+  margin-right: 6px;
+}
+
+.carCard__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carCard__pricing {
+  font-size: 14px;
+  font-weight: 700;
+}
