@@ -1,14 +1,14 @@
 import Header from "./Header";
 import Footer from "./Footer";
 
-function Layout(props) {
+function Layout({ children, hideFooter = false }) {
   return (
     <div>
       <Header />
 
-      {props.children}
+      {children}
 
-      <Footer />
+      {!hideFooter && <Footer />}
     </div>
   );
 }
