@@ -1,12 +1,23 @@
 import { Heart, GasStation, Profile2User } from "iconsax-react";
+import { formatMoney } from "utils/currency";
+
 import carIcon from "assets/car-icon.svg";
 import "./CarCard.css";
 
-function CarCard({ carDetails }) {
-  const { fuel, capacity, type, name, transmission, image, price } = carDetails;
+function CarCard({ carDetails, as: As = "div" }) {
+  const {
+    fuel,
+    type,
+    name,
+    image,
+    price,
+    capacity,
+    transmission,
+    discountPrice,
+  } = carDetails;
 
   return (
-    <div className="carCard">
+    <As className="carCard">
       <div className="carCard__top">
         <div className="carCard__details">
           <p className="carCard__name">{name}</p>
@@ -53,16 +64,18 @@ function CarCard({ carDetails }) {
       </ul>
 
       <div className="carCard__footer">
-        <p className="carCard__pricing">
-          {Intl.NumberFormat("en-US", {
-            style: "currency",
-            currency: "USD",
-          }).format(+(price / 100).toFixed(2))}{" "}
-          / day
-        </p>
+        <div>
+          <p className="carCard__pricing">
+            {formatMoney(price)} / <span>day</span>
+          </p>
+
+          {discountPrice && (
+            <p className="carCard__discount">{formatMoney(discountPrice)}</p>
+          )}
+        </div>
         <button className="primary">Rent Now</button>
       </div>
-    </div>
+    </As>
   );
 }
 

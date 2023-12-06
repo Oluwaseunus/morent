@@ -1,0 +1,72 @@
+.carDetail {
+  /* width: 50rem; */
+  /* height: 50rem; */
+  padding: 2.4rem;
+  border-radius: 1rem;
+  background-color: var(--color-primary-0);
+}
+
+.carDetail__header {
+  display: flex;
+  justify-content: space-between;
+
+  & h2 {
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-bottom: 8px;
+    color: var(--color-secondary-500);
+  }
+}
+
+.carDetail__header-rating {
+  margin-bottom: 3.2rem;
+}
+
+.carDetail__header-count {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color-secondary-400);
+}
+
+.carDetail__description {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 4rem;
+  margin-bottom: 3.2rem;
+  letter-spacing: -0.4px;
+  color: var(--color-secondary-400);
+}
+
+.carDetail__tags {
+  display: grid;
+  row-gap: 1.6rem;
+  column-gap: 4.4rem;
+  margin-bottom: 6.8rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  & > li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    line-height: 150%;
+
+    & :first-child {
+      /* margin-right: 1.6rem; */
+      color: var(--color-secondary-300);
+    }
+
+    & :not(:first-child) {
+      font-weight: 600;
+      color: var(--color-secondary-400);
+    }
+  }
+}
+
+.carDetail__footer .carCard__pricing,
+.carDetail__footer .carDetail__discount {
+  font-size: 2.8rem;
+
+  & span {
+    font-size: 1.6rem;
+  }
+}

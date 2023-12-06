@@ -1,15 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import reportWebVitals from "./reportWebVitals";
-
-import Home from "./pages/home";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+import Home from "pages/home";
+import Other from "pages/other";
+import Payment from "pages/payment";
+
+import reportWebVitals from "./reportWebVitals";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    children: [],
+  },
+  {
+    path: "/other",
+    element: <Other />,
+  },
+  {
+    path: "/payment",
+    element: <Payment />,
   },
 ]);
 

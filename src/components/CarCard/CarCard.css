@@ -52,9 +52,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.carCard__discount {
+  margin-top: 4px;
+  color: var(--color-secondary-300);
+  text-decoration: line-through;
 }
 
 .carCard__pricing {
-  font-size: 14px;
-  font-weight: 700;
+  color: var(--color-secondary-500);
+}
+
+.carCard__pricing span {
+  font-size: 1.4rem;
+  color: var(--color-secondary-300);
 }

@@ -1,0 +1,54 @@
+.review {
+  display: flex;
+  justify-content: auto;
+  padding-bottom: 1.2rem;
+}
+
+.review__profile-image {
+  width: 5.6rem;
+  height: 5.6rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 1.6rem;
+  background-color: orangered;
+}
+
+.review__body {
+  font-size: 1.4rem;
+}
+
+.review__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review__profile-block {
+  height: 5.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.review__profile-name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--color-secondary-500);
+}
+
+.review__profile-role {
+  font-weight: 500;
+  color: var(--color-secondary-300);
+}
+
+.review__description {
+  color: var(--color-secondary-400);
+}
+
+.review__information-date {
+  color: var(--color-secondary-300);
+}
+
+button.secondary.other__reviews-show-all {
+  margin: auto;
+  color: var(--color-secondary-300);
+}

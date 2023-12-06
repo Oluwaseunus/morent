@@ -42,6 +42,12 @@
         background-color: rgba(195, 212, 233, 0.4);
       } */
     }
+
+    & select {
+      border: none;
+      margin-left: -4px;
+      width: 12.6rem;
+    }
   }
 }
 
@@ -50,4 +56,8 @@
   width: 1px;
   margin: 0 2.4rem;
   background-color: rgba(195, 212, 233, 0.4);
+}
+
+.datepicker__select:has(option[value=""]:checked) {
+  color: var(--color-secondary-300);
 }

@@ -1,0 +1,36 @@
+.heroAd {
+  width: 64rem;
+  height: 32rem;
+  padding: 2.4rem;
+  overflow: hidden;
+  position: relative;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-color: var(--color-information-500);
+
+  & h2 {
+    font-weight: 600;
+    font-size: 3.2rem;
+    margin-bottom: 1.6rem;
+    color: var(--color-primary-0);
+  }
+
+  & p {
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: var(--color-primary-0);
+  }
+}
+
+.heroAd__container {
+  max-width: 50%;
+}
+
+.heroAd__image {
+  position: absolute;
+  width: 34rem;
+  left: 3rem;
+  bottom: -5rem;
+  transform: translateX(50%);
+}

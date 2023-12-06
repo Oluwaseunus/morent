@@ -1,5 +1,6 @@
 main {
   padding: 0 var(--body-padding);
+  padding-top: 3.2rem;
   padding-bottom: 6.4rem;
   background-color: #f6f7f9;
 }
@@ -37,4 +38,27 @@ main {
   grid-template-columns: repeat(4, 1fr);
   gap: 3.2rem;
   justify-items: center;
+}
+
+section {
+  margin-bottom: 3.2rem;
+}
+
+.more {
+  display: flex;
+  padding-top: 3.2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.more__carCount {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color-secondary-300);
+}
+
+.ads {
+  display: flex;
+  margin-bottom: 3.2rem;
+  justify-content: space-between;
 }

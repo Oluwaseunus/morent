@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import cog from "assets/cog.svg";
 import logo from "assets/logo.svg";
 import profile from "assets/profile.png";
@@ -9,7 +11,9 @@ import "./Header.css";
 function Header() {
   return (
     <header className="header">
-      <img src={logo} alt="Morent logo" />
+      <Link to="/">
+        <img src={logo} alt="Morent logo" />
+      </Link>
 
       <div className="search"></div>
 

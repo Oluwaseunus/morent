@@ -1,8 +1,12 @@
 :root {
   --body-padding: 6rem;
+  --color-primary-0: #fff;
+  --background-color: #f6f7f9;
   --color-primary-500: #3563e9;
   --color-secondary-300: #90a3bf;
+  --color-secondary-400: #596780;
   --color-secondary-500: #1a202c;
+  --color-information-500: #54a6ff;
 }
 
 body {
@@ -52,4 +56,13 @@ button.primary {
 button.secondary {
   background: none;
   color: var(--color-primary-500);
+}
+
+button.information {
+  color: white;
+  background-color: var(--color-information-500);
+}
+
+select {
+  font-family: inherit;
 }
