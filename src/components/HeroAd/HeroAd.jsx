@@ -3,13 +3,13 @@ import "./HeroAd.css";
 function HeroAd({ color, pattern, heading, text, button, image }) {
   return (
     <div
-      className="heroAd"
+      className="hero__child"
       style={{
         backgroundColor: color,
         backgroundImage: `url(${pattern})`,
       }}
     >
-      <div className="heroAd__container">
+      <div className="hero__child-container">
         <h2>{heading}</h2>
         <p>{text}</p>
 

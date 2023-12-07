@@ -17,7 +17,11 @@ function OtherPage() {
   return (
     <Layout>
       <div className="other__container">
-        <aside className="other__aside">&nbsp;</aside>
+        <aside className="other__aside">
+          <div className="other__aside-header">
+            <p className="other__aside-heading">Type</p>
+          </div>
+        </aside>
 
         <main className="other">
           <section className="other__hero">

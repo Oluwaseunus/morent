@@ -29,7 +29,7 @@ function Home() {
             image={
               <img
                 src={KoenigseggImage}
-                className="heroAd__image"
+                className="hero__child-image"
                 style={{ bottom: "-1rem" }}
                 alt="Ease of doing a car rental safely and reliably. Of course at a low price."
               />
@@ -45,7 +45,7 @@ function Home() {
             image={
               <img
                 src={gtr}
-                className="heroAd__image"
+                className="hero__child-image"
                 alt="Ease of doing a car rental safely and reliably. Of course at a low price."
               />
             }

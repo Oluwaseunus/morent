@@ -1,4 +1,4 @@
-.heroAd {
+.hero__child {
   width: 64rem;
   height: 32rem;
   padding: 2.4rem;
@@ -23,11 +23,11 @@
   }
 }
 
-.heroAd__container {
+.hero__child-container {
   max-width: 50%;
 }
 
-.heroAd__image {
+.hero__child-image {
   position: absolute;
   width: 34rem;
   left: 3rem;
