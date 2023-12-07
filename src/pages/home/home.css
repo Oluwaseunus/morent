@@ -57,7 +57,7 @@ section {
   color: var(--color-secondary-300);
 }
 
-.ads {
+.hero__main {
   display: flex;
   margin-bottom: 3.2rem;
   justify-content: space-between;

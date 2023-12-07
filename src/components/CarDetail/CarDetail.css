@@ -19,7 +19,13 @@
 }
 
 .carDetail__header-rating {
+  display: flex;
+  align-items: center;
   margin-bottom: 3.2rem;
+
+  & img {
+    margin-right: 8px;
+  }
 }
 
 .carDetail__header-count {

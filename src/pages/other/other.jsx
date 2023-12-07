@@ -7,6 +7,10 @@ import CarDetail from "components/CarDetail";
 
 import { carDetails } from "constants/data";
 
+import gtr from "assets/gtr.png";
+import gtr1 from "assets/gtr-1.png";
+import gtr2 from "assets/gtr-2.png";
+
 import "./other.css";
 
 function OtherPage() {
@@ -18,7 +22,32 @@ function OtherPage() {
         <main className="other">
           <section className="other__hero">
             <div className="other__images">
-              <div className="other__images-main"></div>
+              <div className="other__images-main">
+                <div className="other__images-text-container">
+                  <p>Sports car with the best design and acceleration</p>
+                  <span>
+                    Safety and comfort while driving a futuristic and elegant
+                    sports car
+                  </span>
+                </div>
+
+                <div className="other__images-main-container">
+                  <img src={gtr} alt="Nissan GT - R" />
+                </div>
+              </div>
+
+              <ul className="other__images-list">
+                <li className="other__images-item other__images-item-block">
+                  <img src={gtr} alt="Nissan GT - R" />
+                </li>
+
+                <li className="other__images-item">
+                  <img src={gtr1} alt="Nissan GT - R" />
+                </li>
+                <li className="other__images-item">
+                  <img src={gtr2} alt="Nissan GT - R" />
+                </li>
+              </ul>
             </div>
 
             <CarDetail />

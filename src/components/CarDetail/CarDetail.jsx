@@ -1,7 +1,9 @@
 import { Heart } from "iconsax-react";
 
-import "./CarDetail.css";
+import stars from "assets/stars.svg";
 import { formatMoney } from "utils/currency";
+
+import "./CarDetail.css";
 
 const CarDetail = () => {
   return (
@@ -11,6 +13,7 @@ const CarDetail = () => {
           <h2>Nissan GT - R</h2>
 
           <div className="carDetail__header-rating">
+            <img src={stars} alt="4/5 rating" />
             <p className="carDetail__header-count">440+ Reviewers</p>
           </div>
         </div>

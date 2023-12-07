@@ -19,7 +19,7 @@ function Home() {
   return (
     <Layout>
       <main>
-        <div className="ads">
+        <div className="hero__main">
           <HeroAd
             pattern={radial}
             color="var(--color-information-500)"

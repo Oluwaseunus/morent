@@ -29,8 +29,43 @@ main.other {
 .other__images-main {
   width: 100%;
   height: 36rem;
+  padding: 2.4rem;
   margin-bottom: 2.4rem;
-  background-color: orangered;
+  background-color: var(--color-primary-500);
+  background-image: url("../../assets/chevrons.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.other__images-main-container {
+  position: relative;
+
+  left: 50%;
+  width: 80%;
+  bottom: 10%;
+  transform: translateX(-50%);
+}
+
+.other__images-text-container {
+  width: 75%;
+  color: var(--color-primary-0);
+
+  & p {
+    font-weight: 600;
+    font-size: 3.2rem;
+    margin-bottom: 1.6rem;
+    letter-spacing: -0.96px;
+  }
+
+  & span {
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: -0.32px;
+  }
 }
 
 .other__reviews {
@@ -84,6 +119,45 @@ main.other {
 
     & .carCard__footer > div p {
       font-size: 2rem;
+    }
+  }
+}
+
+ul.other__images-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & li.other__images-item {
+    width: 14.8rem;
+    height: 12.4rem;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 10px;
+
+    & img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+
+    &.other__images-item-block {
+      background-color: var(--color-primary-500);
+      background-image: url("assets/chevrons.svg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      & img {
+        position: relative;
+
+        width: 80%;
+        height: auto;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 }
