@@ -7,7 +7,30 @@
   border: 1px solid rgba(195, 212, 233, 0.4);
 
   .search {
+    & input {
+      border: none;
+      background: none;
+
+      width: 80%;
+      margin-right: auto;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    & :first-child {
+      margin-right: 2rem;
+    }
+
+    width: 50rem;
+    display: flex;
     margin-right: auto;
+    border-radius: 7rem;
+    margin-left: 6.4rem;
+    align-items: center;
+    padding: 1.2rem 2.4rem;
+    border: 1px solid rgba(195, 212, 233, 0.4);
   }
 
   .activities {

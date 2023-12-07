@@ -148,6 +148,7 @@ function Admin() {
                 <div className="admin__info-donut">
                   <PieRing
                     stroke={20}
+                    // radius={150}
                     radius={110}
                     gapWidth={5}
                     data={[
@@ -160,9 +161,47 @@ function Admin() {
                   />
 
                   <div className="admin__info-donut-content">
-                    {Intl.NumberFormat("en-US").format(72030)}
+                    <p className="admin__info-donut-count">
+                      {Intl.NumberFormat("en-US").format(72030)}
+                    </p>
+
+                    <span className="admin__info-donut-details">
+                      Rental Car
+                    </span>
                   </div>
                 </div>
+
+                <ul className="admin__section-info-list">
+                  <li className="admin__section-info-item">
+                    <span style={{ backgroundColor: "#0D3559" }}>&nbsp;</span>
+                    <p>Sport Car</p>
+                    <span>{Intl.NumberFormat("en-US").format(17439)}</span>
+                  </li>
+
+                  <li className="admin__section-info-item">
+                    <span style={{ backgroundColor: "#175D9C" }}>&nbsp;</span>
+                    <p>SUV</p>
+                    <span>{Intl.NumberFormat("en-US").format(9478)}</span>
+                  </li>
+
+                  <li className="admin__section-info-item">
+                    <span style={{ backgroundColor: "#2185DE" }}>&nbsp;</span>
+                    <p>Coupe</p>
+                    <span>{Intl.NumberFormat("en-US").format(18197)}</span>
+                  </li>
+
+                  <li className="admin__section-info-item">
+                    <span style={{ backgroundColor: "#63A9E8" }}>&nbsp;</span>
+                    <p>Hatchback</p>
+                    <span>{Intl.NumberFormat("en-US").format(12510)}</span>
+                  </li>
+
+                  <li className="admin__section-info-item">
+                    <span style={{ backgroundColor: "#A6CEF2" }}>&nbsp;</span>
+                    <p>MPV</p>
+                    <span>{Intl.NumberFormat("en-US").format(14406)}</span>
+                  </li>
+                </ul>
               </div>
             </section>
 

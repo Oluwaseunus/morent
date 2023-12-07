@@ -7,6 +7,7 @@ import brownHeart from "assets/brown-heart.svg";
 import brownNotification from "assets/brown-notification.svg";
 
 import "./Header.css";
+import { Setting4, SearchNormal } from "iconsax-react";
 
 function Header() {
   return (
@@ -15,7 +16,11 @@ function Header() {
         <img src={logo} alt="Morent logo" />
       </Link>
 
-      <div className="search"></div>
+      <div className="search">
+        <SearchNormal variant="Linear" size={24} color="#3D5278" />
+        <input type="text" placeholder="Search something here" />
+        <Setting4 variant="Linear" size={24} color="#3D5278" />
+      </div>
 
       <div className="activities">
         <button>
